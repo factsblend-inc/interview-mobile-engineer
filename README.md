@@ -1,14 +1,18 @@
 # Project for interview Mobile Engineer
 
+## Basic Chat application.
+
+![alt text](chat-history-example.png)
+
 - ### Requirements
 
   - ### Login Page
 
     - ##### Features
-      - Input username and password to goto "Album Page".
+      - Input username and password to goto "Chat Room".
     - ##### Components
       - Text
-        - Display text "ONE OK ROCK Album".
+        - Display text "Goochat".
         - Use Kanit-Bold as font-family.
       - Username TextField
         - Validate user input >= 10 character
@@ -19,20 +23,20 @@
       - Login Button
         - Enable when user input correct format username and password.
         - Disable when user input invalid format username and password.
-        - Tap to goto "Album Page".
+        - Tap to goto "Chat Room".
 
-  - ### Album Page
+  - ### Chat Room Page
     - ##### Features
-      - Display all of album card by load json data (assets/json).
-      - User can view all of album card by scroll from the top to the bottom of page.
+      - Display all of chat history by load data from an api : `https://66067147be53febb857def02.mockapi.io/goochat/chat/history`.
+      - User can view all of chat history by scroll from the top to the bottom of page.
+      - Should showing the latest message at the bottom of page.
     - ##### Components
-      - AppBar
-        - Display text "Album List"
-      - Album Card
-        - Display album's image.
-        - Display album's name with Kanit-Regular as font family.
-        - Display album's year with Kanit-Italic as font family.
-        - You can see example image inside assets/example/album-card.
+      - Navigation Bar
+        - Display text [The name of receiver].
+      - Bubble Message according to image above
+        - Display receiver message (avatar + message).
+        - Display sender message (only message).
+        - Display message with Kanit-Regular as font family.
 
 - ### NOTE
   - Freely to design your component.
